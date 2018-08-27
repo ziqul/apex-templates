@@ -48,8 +48,6 @@ public class {{TriggerManagerName}}
      */
     public void manage()
     {
-        this.bind(Evt.beforeinsert, new InitialNotificationFrequencySetter());
-
         Evt ev = null;
         if(Trigger.isInsert && Trigger.isBefore)
         {
